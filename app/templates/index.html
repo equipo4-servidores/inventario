@@ -2,13 +2,13 @@
 {% block contenido %}
 <div class="tarjeta">
   <div class="barra">
-    <h2 style="margin:0">Equipos registrados ({{ equipos|length }})</h2>
-    <a class="btn" href="{{ url_for('nuevo') }}">+ Registrar equipo</a>
+    <h2 style="margin:0">Lotes registrados ({{ equipos|length }})</h2>
+    <a class="btn" href="{{ url_for('nuevo') }}">+ Registrar lote</a>
   </div>
   <div class="tabla-scroll">
   <table>
     <thead>
-      <tr><th>ID</th><th>Nombre</th><th>Tipo</th><th>Marca</th><th>N.º de serie</th><th>Ubicación</th><th>Estado</th><th>Acciones</th></tr>
+      <tr><th>ID</th><th>Modelo</th><th>Tipo</th><th>Marca</th><th>Código de lote</th><th>Ubicación</th><th>Estado</th><th>Acciones</th></tr>
     </thead>
     <tbody>
     {% for e in equipos %}
@@ -28,7 +28,7 @@
         </td>
       </tr>
     {% else %}
-      <tr><td colspan="8">No hay equipos registrados.</td></tr>
+      <tr><td colspan="8">No hay lotes registrados.</td></tr>
     {% endfor %}
     </tbody>
   </table>

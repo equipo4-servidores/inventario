@@ -4,7 +4,7 @@
   <h2 style="margin-top:0">{{ titulo }}</h2>
   <form method="post">
     <div class="campo">
-      <label for="nombre">Nombre del equipo</label>
+      <label for="nombre">Modelo del componente</label>
       <input id="nombre" name="nombre" maxlength="100" value="{{ equipo.nombre or '' }}" required>
     </div>
     <div class="campo">
@@ -18,7 +18,7 @@
       <input id="marca" name="marca" maxlength="50" value="{{ equipo.marca or '' }}" required>
     </div>
     <div class="campo">
-      <label for="numero_serie">Número de serie</label>
+      <label for="numero_serie">Código de lote</label>
       <input id="numero_serie" name="numero_serie" maxlength="50" value="{{ equipo.numero_serie or '' }}" required>
     </div>
     <div class="campo">
